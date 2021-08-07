@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai2.js">
+</head>
+<body>
+    <button onclick="generate()">click me</button>
+    <script>
+        function generate(){
+            var randomNumber = Math.floor(Math.random() * 20) + 4;
+            alert(randomNumber)
+            for(var number = 4 ; number <= randomNumber; number += 2)
+                if(number % 2 == 0){         
+                    alert(number)
+                }
+                else if(number = Math.floor(randomNumber - 1)){
+                    break
+                }
+        }
+    </script>
+</body>
+</html>
